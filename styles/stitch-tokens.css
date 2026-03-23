@@ -1,0 +1,226 @@
+/* Stitch Design Tokens - Sentimental Coordinates
+   Semi-3D Brutalist meets Luxury Editorial (Service 95 / Nas aesthetic)
+   Source: https://stitch.withgoogle.com/projects/1532554074002780396
+*/
+
+:root {
+  /* ===== COLOR TOKENS ===== */
+  --color-bg-primary: #191a1f;
+  --color-bg-secondary: #24252a;
+  --color-bg-tertiary: #2d2e33;
+  --color-bg-card: #1f2025;
+
+  --color-text-primary: #ffffff;
+  --color-text-secondary: #b8b8b8;
+  --color-text-muted: #6b6c70;
+
+  --color-accent-gold: #c9a962;
+  --color-accent-gold-muted: #a88f52;
+  --color-accent-rose: #d4a574;
+
+  --color-border-subtle: #3a3b40;
+  --color-border-medium: #4a4b50;
+  --color-border-strong: #5a5b60;
+
+  --color-shadow-hard: #1a1a1a;
+  --color-shadow-soft: rgba(0, 0, 0, 0.4);
+
+  --color-map-filter: grayscale(100%) contrast(1.1) brightness(0.9);
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-family-primary: 'Google Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-family-editorial: 'Playfair Display', Georgia, serif;
+  --font-family-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --font-size-xs: 0.75rem;      /* 12px */
+  --font-size-sm: 0.875rem;     /* 14px */
+  --font-size-base: 1rem;       /* 16px */
+  --font-size-md: 1.125rem;     /* 18px */
+  --font-size-lg: 1.25rem;      /* 20px */
+  --font-size-xl: 1.5rem;       /* 24px */
+  --font-size-2xl: 2rem;        /* 32px */
+  --font-size-3xl: 2.5rem;      /* 40px */
+  --font-size-4xl: 3.5rem;      /* 56px */
+
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+
+  --line-height-tight: 1.15;
+  --line-height-base: 1.5;
+  --line-height-relaxed: 1.625;
+
+  --letter-spacing-tight: -0.02em;
+  --letter-spacing-base: 0;
+  --letter-spacing-wide: 0.05em;
+  --letter-spacing-wider: 0.1em;
+
+  /* ===== SPACING ===== */
+  --spacing-0: 0;
+  --spacing-1: 0.25rem;         /* 4px */
+  --spacing-2: 0.5rem;          /* 8px */
+  --spacing-3: 0.75rem;         /* 12px */
+  --spacing-4: 1rem;            /* 16px */
+  --spacing-5: 1.25rem;         /* 20px */
+  --spacing-6: 1.5rem;          /* 24px */
+  --spacing-8: 2rem;            /* 32px */
+  --spacing-10: 2.5rem;         /* 40px */
+  --spacing-12: 3rem;           /* 48px */
+  --spacing-16: 4rem;           /* 64px */
+  --spacing-20: 5rem;           /* 80px */
+  --spacing-24: 6rem;           /* 96px */
+
+  /* ===== BORDER RADIUS ===== */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;         /* 4px */
+  --radius-md: 0.5rem;          /* 8px */
+  --radius-lg: 0.75rem;         /* 12px */
+  --radius-xl: 1rem;            /* 16px */
+  --radius-2xl: 1.5rem;         /* 24px */
+  --radius-full: 9999px;
+
+  /* ===== SEMI-3D SHADOWS (Hard Offset) ===== */
+  --shadow-3d-hard-sm: 4px 4px 0px var(--color-shadow-hard);
+  --shadow-3d-hard-md: 6px 6px 0px var(--color-shadow-hard);
+  --shadow-3d-hard-lg: 8px 8px 0px var(--color-shadow-hard);
+  --shadow-3d-hard-xl: 10px 10px 0px var(--color-shadow-hard);
+  --shadow-3d-hard-2xl: 12px 12px 0px var(--color-shadow-hard);
+
+  --shadow-3d-pressed-sm: 2px 2px 0px var(--color-shadow-hard);
+  --shadow-3d-pressed-md: 4px 4px 0px var(--color-shadow-hard);
+  --shadow-3d-pressed-lg: 6px 6px 0px var(--color-shadow-hard);
+
+  --shadow-layered:
+    4px 4px 0px var(--color-shadow-hard),
+    8px 8px 0px rgba(26, 26, 26, 0.5);
+
+  --shadow-tilted-frame:
+    0 0 0 1px var(--color-border-medium),
+    12px 12px 0px var(--color-shadow-hard);
+
+  /* ===== ANIMATIONS ===== */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-3d-flip: 800ms ease-in-out;
+
+  --gps-pulse-duration: 2s;
+  --gps-ping-duration: 1.5s;
+
+  /* ===== BREAKPOINTS (Mobile-First) ===== */
+  --breakpoint-sm: 640px;       /* Small tablets */
+  --breakpoint-md: 768px;       /* Tablets */
+  --breakpoint-lg: 1024px;      /* Laptops */
+  --breakpoint-xl: 1280px;      /* Desktops */
+  --breakpoint-2xl: 1536px;     /* Large desktops */
+
+  /* ===== MAPBOX ===== */
+  --mapbox-style: 'mapbox://styles/mapbox/light-v11';
+  --mapbox-filter: grayscale(100%) contrast(1.1) brightness(0.9);
+
+  /* ===== Z-INDEX SCALE ===== */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-fixed: 300;
+  --z-modal-backdrop: 400;
+  --z-modal: 500;
+  --z-popover: 600;
+  --z-tooltip: 700;
+  --z-toast: 800;
+}
+
+/* ===== BASE STYLES ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100svh;
+  background-color: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-base);
+  letter-spacing: var(--letter-spacing-base);
+}
+
+/* ===== UTILITY CLASSES ===== */
+.semi-3d-card {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border-subtle);
+  box-shadow: var(--shadow-3d-hard-md);
+  transition: box-shadow var(--transition-base);
+}
+
+.semi-3d-card:hover {
+  box-shadow: var(--shadow-3d-hard-lg);
+}
+
+.semi-3d-button {
+  background: var(--color-accent-gold);
+  color: var(--color-bg-primary);
+  border: 1px solid var(--color-border-medium);
+  box-shadow: var(--shadow-3d-hard-sm);
+  font-weight: var(--font-weight-semibold);
+  transition: all var(--transition-fast);
+}
+
+.semi-3d-button:active {
+  transform: translate(2px, 2px);
+  box-shadow: var(--shadow-3d-pressed-sm);
+}
+
+.tilted-frame {
+  transform: perspective(800px) rotateX(2deg) rotateY(-3deg);
+  box-shadow: var(--shadow-tilted-frame);
+}
+
+.mapbox-monochrome .mapboxgl-canvas {
+  filter: var(--mapbox-filter);
+}
+
+.gps-pulse-ring {
+  animation: gps-pulse var(--gps-pulse-duration) infinite ease-out;
+}
+
+@keyframes gps-pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes gps-ping {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* ===== EDITORIAL TYPOGRAPHY ===== */
+.editorial-heading {
+  font-family: var(--font-family-editorial);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  letter-spacing: var(--letter-spacing-tight);
+}
