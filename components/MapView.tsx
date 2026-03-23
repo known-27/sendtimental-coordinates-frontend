@@ -123,7 +123,7 @@ export default function MapView({
             icon={giftCoordinates ? goldMarkerIcon : createPulsingIcon()}
           >
             <Popup>
-              {giftCoordinates?.locationName || 'Gift Location'}
+              {'Gift Location'}
             </Popup>
           </Marker>
         )}
